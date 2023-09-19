@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>陈燕灵简历网站</title>
+
+</head>
+
+<body>
+    <!-- header -->
+
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">陈燕灵</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">介绍</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">技术</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">关于</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link">项目</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">工作</a>
+                    </li>
+
+                    <!-- <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <svg class="icon svg-icon" aria-hidden="true">
+                    <use xlink:href="#icon-list"></use>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- hrme -->
+        <section class="home section bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Hi,<br>I'am <span class="home__title-color">陈燕灵</span><br> 前端开发
+                </h1>
+                <h1 class="phone">电话：15919213326</h1>
+                <a href="#" style="position: relative; z-index: 10;" class="button" id="contact">Contact</a>
+            </div>
+            <div class="home__social">
+                <a href="#" class="home__social-icon" id="wechat">
+                    <svg class="svg-icon-home icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>
+                </a>
+                <div class="home__social-icon">
+                    <a href="#" onclick="openNewWindow('https://github.com/alinlinbo')" id="myGit">
+                        <svg class="svg-icon-home icon" aria-hidden="true">
+                            <use xlink:href="#icon-github-fill"></use>
+                        </svg>
+
+                    </a>
+                    <div class=" home__git">
+                        <a href="#" onclick="openNewWindow('https://github.com/alinlinbo')">https://github.com/alinlinbo</a>
+                    </div>
+                </div>
+                <div class="home__social-icon">
+                    <a href="#" id="myPhone">
+                        <svg class="svg-icon-home svg-icon icon" aria-hidden="true">
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>
+                    </a>
+                    <div class=" home__phone">
+                        <div>15919213326</div>
+                    </div>
+                </div>
+
+
+
+                <div class=" home__code">
+                    <img src="assets/img/wechat_code.png" alt="">
+                </div>
+
+
+            </div>
+
+            <div class="home__img">
+                <img class="home__img" src="assets/img/head1.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">技术</h2>
+
+            <div class="project__container bd-grid">
+                <div class="skills__data">
+                    <div class="skills__item">
+                        <div class="skill__introduce">
+                            <div class="skills__intr__r">
+                                <i class='bx bxl-html5 skills__icon'></i><span>HTML5</span>
+                            </div>
+
+                            <div class="skills__bar">90%</div>
+                        </div>
+
+                        <div class="skills__line skills__line90"></div>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__item">
+                        <div class="skill__introduce">
+                            <div class="skills__intr__r">
+                                <i class='bx bxl-css3 skills__icon'></i><span>CSS3</span>
+                            </div>
+
+                            <div class="skills__bar">80%</div>
+                        </div>
+
+                        <div class="skills__line80 skills__line"></div>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__item">
+                        <div class="skill__introduce">
+                            <div class="skills__intr__r">
+                                <i class='bx bxl-javascript skills__icon'></i><span>JavaScript</span>
+                            </div>
+
+                            <div class="skills__bar">85%</div>
+                        </div>
+
+                        <div class="skills__line85 skills__line"></div>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__item">
+                        <div class="skill__introduce">
+                            <div class="skills__intr__r">
+                                <i class='bx bxl-vuejs skills__icon color-vue'></i><span>Vue</span>
+                            </div>
+
+                            <div class="skills__bar">70%</div>
+                        </div>
+
+                        <div class="skills__line70 skills__line"></div>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__item">
+                        <div class="skill__introduce">
+                            <div class="skills__intr__r">
+                                <i class='bx bx-link skills__icon color-vue'></i><span>小程序、Uniapp</span>
+                            </div>
+
+                            <div class="skills__bar">75%</div>
+                        </div>
+
+                        <div class=" skills__line skills__line75"></div>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__item">
+                        <div class="skill__introduce">
+                            <div class="skills__intr__r">
+                                <i class='bx bx-landscape skills__icon color-vue'></i><span>Nuxt.js</span>
+                            </div>
+
+                            <div class="skills__bar">65%</div>
+                        </div>
+
+                        <div class=" skills__line skills__line65"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <h2 class="section-title">关于</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+                <div class="about__sub">
+                    <h2 class="about__subtitle">I'am 陈燕灵</h2>
+                    <p class="about__text">
+                        多年 <span>JavaScript(TypeScript )</span>开发经验，熟练掌握<span> ES6+/CSS 3</span>新特性，熟练使用 Vue 、小程序、UniApp 等前端开发框架
+                        具有一定的后端开发(<span>Node.js</span> )经验，掌握 <span>MySql</span> 等数据库查询
+                        熟悉 <span>Nuxt.js</span>等 meta framework 的使用，能独立搭建<span>全栈 web</span> 应用></p>
+                </div>
+        </section>
+
+        <section class="project section" id="project">
+            <h2 class="section-title">项目</h2>
+            <div class="project__container bd-grid">
+                <div class="project__data">
+                    <div class="project__item">
+                        <h2 class="project__subtitle">个人线上简历</h2>
+                        <span class="project__text">使用CSS和JavaScript开发的个人线上简历，利用媒体查询和Rem特性同时适配了PC端和移动端，且实现了一些动画</span>
+                    </div>
+                </div>
+                <div class="project__data">
+                    <div class="project__item">
+                        <h2 class="project__subtitle">润通联合云管家</h2>
+                        <span
+                            class="project__text">基于uniapp框架开发的微信小程序的缴费小程序。实现了缴费、房屋管理、报修管理等模块的页面、接口对接以及交互。以及axios封装和导航栏等公用组件的封装。</span>
+                    </div>
+                </div>
+                <div class="project__data">
+                    <div class="project__item">
+                        <h2 class="project__subtitle">寺院后台管理系统</h2>
+                        <span
+                            class="project__text">使用jq，bootstrap和vue开发的寺院后台管理系统，实现了文章管理，用户管理,项目管理等模块前端页面的编写与接口的对接，在项目中对ajax请求进行封装，为接口调用添加了拦截器和loading动画，有效减少代码量并提高开发效率</span>
+                    </div>
+                </div>
+                <div class="project__data">
+                    <div class="project__item">
+                        <h2 class="project__subtitle">寺院公众号项目</h2>
+                        <span
+                            class="project__text">使用jq开发的微信公众号微站，实现了首页，详情页，我的页面等的接口对接及样式修改，针对业务场景封装底部及顶部导航栏、头部返回等公用组件，提高代码复用</span>
+                    </div>
+                </div>
+                <div class="project__data">
+                    <div class="project__item">
+                        <h2 class="project__subtitle">1983抽盒机</h2>
+                        <span
+                            class="project__text">基于原生微信小程序、支付宝小程序商城，项目使用小程序自带的组件，完成了优惠券红包领取、活动页主页、海报分享、抽盲盒等模块的接口对接及样式修改</span>
+                    </div>
+                </div>
+                <div class="project__data">
+                    <div class="project__item">
+                        <h2 class="project__subtitle">新八佰伴等商城小程序</h2>
+                        <span
+                            class="project__text">基于uni-app框架开发的微信小程序商城，项目使用uview组件和uni-app自带的组件，完成了购物、详情、提交订单等模块的接口对接及样式修改</span>
+                    </div>
+                </div>
+                <div class="project__data">
+                    <div class="project__item">
+                        <h2 class="project__subtitle">系统中台</h2>
+                        <span class="project__text">基于vue框架，使用ant design组件开发的业务中台,完成商家参数、进口报关模块的交互与接口对接</span>
+                    </div>
+                </div>
+                <div class="project__data">
+                    <div class="project__item">
+                        <h2 class="project__subtitle">商城管理后台</h2>
+                        <span
+                            class="project__text">使用vue框架和element-ui开发的商城管理后台，实现了优惠券、文章管理、会员管理等模块部分接口对接与前端小程序页面的编写</span>
+                    </div>
+                </div>
+        </section>
+
+        <section class="work section" id="work">
+            <h2 class="section-title">工作</h2>
+            <div class="work__container bd-grid">
+
+                <div class="work__data">
+                    <div class="work__name">
+                        <i class='bx bx-buildings work__icon'></i>
+                        <span class="work__name">珠海齐润科技有限公司</span>
+                    </div>
+                    <div class="work__name">
+                        <i class='bx bxs-briefcase-alt-2 work__icon'></i>
+                        <span class="work__name">负责使用 Uniapp 开发小程序，以及使用 Vue 开发后台项目。</span>
+                    </div>
+                    <div class="work__name">
+                        <i class='bx bx-time-five work__icon'></i>
+                        <span class="work__name">2022-08~2022-01</span>
+                    </div>
+                </div>
+                <div class="work__data">
+                    <div class="work__name">
+                        <i class='bx bx-buildings work__icon'></i>
+                        <span class="work__name">珠海唐佛科技有限公司</span>
+                    </div>
+                    <div class="work__name">
+                        <i class='bx bxs-briefcase-alt-2 work__icon'></i>
+                        <span class="work__name">负责使用vue和jquery开发微信公众号、微站和后台管理。</span>
+                    </div>
+                    <div class="work__name">
+                        <i class='bx bx-time-five work__icon'></i>
+                        <span class="work__name">2021-03~2022-07</span>
+                    </div>
+                </div>
+                <div class="work__data">
+                    <div class="work__name">
+                        <i class='bx bx-buildings work__icon'></i>
+                        <span class="work__name">珠海横琴智恒运通网络科技</span>
+                    </div>
+                    <div class="work__name">
+                        <i class='bx bxs-briefcase-alt-2 work__icon'></i>
+                        <span class="work__name">负责使用 Uniapp 开发小程序，以及使用 Vue 开发后台项目。</span>
+                    </div>
+                    <div class="work__name">
+                        <i class='bx bx-time-five work__icon'></i>
+                        <span class="work__name">2020-11~2021-02</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="email" placeholder="Email" class="contact__input">
+                    <label for="contact-message"></label>
+                    <textarea id="contact-message" name="message" cols="30" rows="10" class="contact__input"></textarea>
+
+                    <input type="button" value="Enviar" class="contact__button button">
+                </form>
+            </div>
+        </section> -->
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title">陈燕灵</p>
+        <div style="display: none;" class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p>&#169;2023 copyright</p>
+    </footer>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/iconfont.js"></script>
+</body>
+
+</html>
