@@ -62,7 +62,7 @@ myPhone.addEventListener('mouseenter', () => {
   homePhone.style.display = 'block'
   if (isMobileDevice()) {
     window.location.href = 'tel:' + '15919213326';
-  } else {
+  }else{
     console.log('pc')
   }
 })
@@ -98,7 +98,7 @@ function isElementInViewport(el) {
   return (
     rect.top >= 0 &&
     // rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 200
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) +200
     // &&rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
@@ -121,10 +121,10 @@ function handleLoad(el) {
   if (isElementInViewport(element)) {
     element.classList.add('animate');
   } else {
-    if (element) {
+    if(element){
       element.classList.remove('animate');
     }
-
+    
   }
 
   if (el === '.project__data' || el === '.work__data') {
@@ -181,16 +181,16 @@ window.addEventListener('scroll', () => {
     const section = document.querySelector(link.hash);
 
     // if (section.offsetTop <= scrollPosition + windowHeight / 2 && section.offsetTop + section.offsetHeight > scrollPosition + windowHeight / 2) {
-
+      
     //   navLink.forEach((link,index) => {
     //     link.classList.remove('active');
     //   })
     //   link.classList.add('active');
-
+      
     // }
 
     if (section && section.offsetTop <= scrollPosition + windowHeight / 2 && section.offsetTop + section.offsetHeight > scrollPosition + windowHeight / 2) {
-      navLink.forEach((link, index) => {
+      navLink.forEach((link,index) => {
         link.classList.remove('active');
       })
       link.classList.add('active');
@@ -200,32 +200,30 @@ window.addEventListener('scroll', () => {
 });
 
 // 工作特效
-const workContainer = document.querySelector('.work__container')
-console.log(workContainer.offsetWidth)
 const line = document.getElementById('line'),
-  c1 = document.getElementById('c1'),
-  c2 = document.getElementById('c2')
+            c1 = document.getElementById('c1'),
+            c2 = document.getElementById('c2')
 
-//获取vw
-const vw = workContainer.offsetWidth;
-const vh = '360';
-console.log(vw)
-let d1W = Math.floor(vw / 3),
-  d2W = Math.floor(vw * 2 / 3),
-  d3W = Math.floor(vw)
-let d1H = Math.floor(vh  * 2 / 3),
-  d2H = Math.floor(vh / 3)
-console.log(d1H, d2H)
-line.setAttribute('d', `M 0 ${vh} L ${d3W} 0`)
-// c1的坐标
-c1.setAttribute('cx', d1W)
-c1.setAttribute('cy', d1H)
-// c2的坐标
-c2.setAttribute('cx', d2W)
-c2.setAttribute('cy', d2H)
-setTimeout(() => {
-  c1.classList.remove('d-none')
-}, 900)
-setTimeout(() => {
-  c2.classList.remove('d-none')
-}, 1800)
+        //获取vw
+        const vw = window.innerWidth - 60;
+        const vh = window.innerHeight ;
+        console.log(vw)
+        let d1W = Math.floor(vw / 3),
+            d2W = Math.floor(vw * 2 / 3),
+            d3W = Math.floor(vw)
+        let d1H = Math.floor(vh * 0.5 * 2 / 3),
+            d2H = Math.floor(vh * 0.5 / 3)
+        console.log(d1H, d2H)
+        line.setAttribute('d', `M 0 ${vh * 0.5} L ${d3W} 0`)
+        // c1的坐标
+        c1.setAttribute('cx', d1W)
+        c1.setAttribute('cy', d1H)
+        // c2的坐标
+        c2.setAttribute('cx', d2W)
+        c2.setAttribute('cy', d2H)
+        setTimeout(() => {
+            c1.classList.remove('d-none')
+        }, 900)
+        setTimeout(() => {
+            c2.classList.remove('d-none')
+        }, 1800)

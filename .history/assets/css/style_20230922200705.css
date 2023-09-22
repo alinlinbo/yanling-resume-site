@@ -854,10 +854,10 @@ img {
 
 
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1024px){
     .svg__content {
         width: 100%;
-        height: 700px;
+        height: 88vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -866,7 +866,7 @@ img {
     }
     svg {
         width: 1024px;
-        height: 360px;
+        height: 600vh;
     }
     .d-none {
         display: none;
@@ -886,12 +886,11 @@ img {
     }
     .work__list{
         position: absolute;
-        height: 100%;
+        bottom: 0;
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
         width: 1024px;
-        display: flex;
-        justify-content: space-between;
     }
     
     .work__item{
@@ -902,19 +901,8 @@ img {
         justify-content: end;
         text-align: justify;
     }
-    .work__item2{
-        justify-content: center;
-    }
-
-    .work__item3{
-        justify-content: flex-start;
-    }
-
     .work__year{
         font-size: 4rem;
         color: var(--first-color);
     }
-}
-@media screen and (width: 1024px){
-
 }

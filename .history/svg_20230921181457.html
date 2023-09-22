@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 30px;
+    }
+
+    svg{
+        width: 100%;
+        height: 500px;
+    }
+    #line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 5s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+</style>
+<body>
+    <div class="content">
+        <svg width="500" height="500">
+            <path id="line" d="M 0 500 L 200 200" stroke="black" stroke-width="2" fill="none" />
+          </svg>
+    </div>
+    <script>
+        const line = document.getElementById('line');
+        line.setAttribute('d',"M 0 500 L 200 200")
+        </script>
+</body>
+</html>

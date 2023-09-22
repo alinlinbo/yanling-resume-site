@@ -200,23 +200,23 @@ window.addEventListener('scroll', () => {
 });
 
 // 工作特效
-const workContainer = document.querySelector('.work__container')
-console.log(workContainer.offsetWidth)
+const workData = document.querySelector('.work__container')
+console.log(workData.offsetWidth)
 const line = document.getElementById('line'),
   c1 = document.getElementById('c1'),
   c2 = document.getElementById('c2')
 
 //获取vw
-const vw = workContainer.offsetWidth;
-const vh = '360';
+const vw = window.innerWidth - 60;
+const vh = window.innerHeight;
 console.log(vw)
 let d1W = Math.floor(vw / 3),
   d2W = Math.floor(vw * 2 / 3),
   d3W = Math.floor(vw)
-let d1H = Math.floor(vh  * 2 / 3),
-  d2H = Math.floor(vh / 3)
+let d1H = Math.floor(vh * 0.5 * 2 / 3),
+  d2H = Math.floor(vh * 0.5 / 3)
 console.log(d1H, d2H)
-line.setAttribute('d', `M 0 ${vh} L ${d3W} 0`)
+line.setAttribute('d', `M 0 ${vh * 0.5} L ${d3W} 0`)
 // c1的坐标
 c1.setAttribute('cx', d1W)
 c1.setAttribute('cy', d1H)

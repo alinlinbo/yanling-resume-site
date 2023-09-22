@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 30px;
+    }
+
+    svg {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .line {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: draw 2s linear forwards;
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="content">
+        <svg>
+            <path class="line" id="line" d="" stroke="black" stroke-width="2" fill=none" />
+            <path id="line2" d="" stroke="black" stroke-width="2" fill="none" />
+            <!-- <path id="line3" d="" stroke="black" stroke-width="2" fill="none" /> -->
+        </svg>
+    </div>
+    <script>
+        const line = document.getElementById('line'),
+            line2 = document.getElementById('line2'),
+            line3 = document.getElementById('line3')
+        
+        //获取vw
+        const vw = window.innerWidth - 40;
+        const vh = window.innerHeight - 40;
+        console.log(vw)
+        let d1W = Math.floor(vw / 3),
+            d2W = Math.floor(vw*2 / 3)
+            d3W = Math.floor(vw)
+        let d1H = Math.floor(vh * 0.5 * 2 / 3)
+            d2H = Math.floor(vh * 0.5 / 3)
+            d3H = Math.floor(vh * 0.5)
+        console.log(vh, d1H)
+        line.setAttribute('d', `M 0 ${vh * 0.5} L ${d1W} ${d1H}`)
+        
+        setTimeout(()=>{  
+            line2.classList.add('line')
+            line2.setAttribute('d', `M ${d1W} ${d1H} L ${d2W} ${d2H}`)
+        },1000)
+        setTimeout(()=>{  
+            line3.classList.add('line')
+            line2.setAttribute('d', `M ${d2W} ${d2H} L ${d2W} ${d2H}`)
+        },500)
+    </script>
+</body>
+
+</html>

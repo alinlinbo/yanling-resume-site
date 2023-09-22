@@ -208,13 +208,13 @@ const line = document.getElementById('line'),
 
 //获取vw
 const vw = workContainer.offsetWidth;
-const vh = '360';
+const vh = '600';
 console.log(vw)
 let d1W = Math.floor(vw / 3),
   d2W = Math.floor(vw * 2 / 3),
   d3W = Math.floor(vw)
-let d1H = Math.floor(vh  * 2 / 3),
-  d2H = Math.floor(vh / 3)
+let d1H = Math.floor(vh * 0.5 * 2 / 3),
+  d2H = Math.floor(vh * 0.5 / 3)
 console.log(d1H, d2H)
 line.setAttribute('d', `M 0 ${vh} L ${d3W} 0`)
 // c1的坐标

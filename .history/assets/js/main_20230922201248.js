@@ -208,7 +208,7 @@ const line = document.getElementById('line'),
 
 //获取vw
 const vw = workContainer.offsetWidth;
-const vh = '360';
+const vh = '600';
 console.log(vw)
 let d1W = Math.floor(vw / 3),
   d2W = Math.floor(vw * 2 / 3),
